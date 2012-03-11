@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutorial | Home </title>
+<head>
+<body>
+  <h1>Sample App</h1>
+  <p>
+     This is the home for my application built by 
+     <a href="http://google.com"> Venkat </a>
+  </p>
+</body>
+</html>
