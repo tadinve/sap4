@@ -16,7 +16,16 @@
 class User < ActiveRecord::Base
    attr_accessible :name, :email, :role, :company, :password, :password_confirmation, :remember_token
    has_secure_password
+   has_many :pivots
+
+   before_save :create_remember_token
 
    validates :name, :email, :role, :company, presence: true
+
+   private
+
+      def create_remember_token
+          self.remember_token = SecureRandom.urlsafe_base64
+      end
 
 end

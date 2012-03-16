@@ -181,9 +181,14 @@ th {
   color: white;
 }
 
+td.td_id {
+  width: 4em;
+}
+
 td.td_name {
   width: 20em;
 }
+
 td.td_role {
   width: 10em;
 }
@@ -192,4 +197,27 @@ td.td_comp {
 }
 
 
+/* pivots */
 
+.pivots {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: $grayLight;
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}

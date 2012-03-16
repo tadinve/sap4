@@ -16,6 +16,8 @@
 class User < ActiveRecord::Base
    attr_accessible :name, :email, :role, :company, :password, :password_confirmation, :remember_token
    has_secure_password
+   has_many :pivots, dependent: :destroy
+
    before_save :create_remember_token
 
    validates :name, :email, :role, :company, presence: true
