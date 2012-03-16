@@ -170,3 +170,31 @@ input, textarea, select, .uneditable-input {
   @extend .error;
  }
 
+/* user tables */
+
+table, th, td{
+  border: 1px solid black;
+}
+
+th {
+  background-color: blue;  
+  color: white;
+}
+
+td.td_id {
+  width: 4em;
+}
+
+td.td_name {
+  width: 20em;
+}
+
+td.td_role {
+  width: 10em;
+}
+td.td_comp {
+  width: 10em;
+}
+
+
+
